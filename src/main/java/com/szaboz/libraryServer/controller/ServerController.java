@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class ServerController {
     @RequestMapping("/")
     String home() {
-        return "home";
+        return "{'response':'home'}";
     }
 
     @RequestMapping("/hello")
     String hello() {
-        return "Hello";
+        return "{'response':'Hello'}";
     }
 }
